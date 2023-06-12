@@ -7,11 +7,10 @@ import Step600Form from "./components/Step600Form"
 export async function getServerSideProps(context: NextPageContext) {
   const session = await getSession(context);
 
-  if (session) {
+  if (!session) {
     return {
       redirect: {
-        //destination: '/auth',
-        destination: '/',
+        destination: '/auth',
         permanent: false,
       }
     }
