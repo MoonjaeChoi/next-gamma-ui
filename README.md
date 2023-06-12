@@ -10,6 +10,43 @@ npm i axios
 npm i swr
 npm i react-icons
 
+# 4 Prisma 
+## prisma 설치 
+npm install prisma --save-dev
+npm install @prisma/client
+npx prisma init 
+
+## .env
+DATABASE_URL=mongodb+srv://piratecmj:Tmxlcl0519@cluster0.6btq2cl.mongodb.net/portfolio4
+
+## global.d.ts 생성 
+
+## 
+npm i mongodb
+npm i @next-auth/prisma-adapter
+
+## .env.development
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GITHUB_ID=
+GITHUB_SECRET=
+NEXTAUTH_JWT_SECRET=
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=
+EMAIL_SERVER_HOST=smtp.sendgrid.net
+EMAIL_SERVER_PORT=587
+EMAIL_SERVER_USER=apikey
+EMAIL_SERVER_PASSWORD=
+EMAIL_FROM=
+
+
+## 정의한 DB 설치하기.
+/prisma/schema.prisma
+
+npx prisma db push
+
+------------------------------------------
+
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
