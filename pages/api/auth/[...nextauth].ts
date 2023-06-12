@@ -3,7 +3,6 @@ import GithubProvider from 'next-auth/providers/github'
 import GoogleProvider from 'next-auth/providers/google'
 import EmailProvider from "next-auth/providers/email"
 import { PrismaAdapter } from "@next-auth/prisma-adapter"
-//import prismadb from '@/libs/prismadb';
 import prismadb from '@/libs/prismadb'
 
 

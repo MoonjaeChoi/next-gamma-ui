@@ -78,31 +78,31 @@ const Step600Form = (props: Props) => {
     <div className="container">
       <h3>스케줄 수정</h3>
       <div className="content">
-        <p className="modal">
+        <div className="modal">
           <span>직원</span>
           <div className="mb-4">
-          <label
-            className="block text-gray-500 text-sm font-bold mb-5 leading-[2]"
-            htmlFor="DraftWord"
-          >
-            문서를 작성하기 위한 첫 번째 단계인 <br/>초안을 작성하기 위해,<br/>
-            단어를 선택하는 단계입니다. <br/>
-            초안 작성 시 단어 선택은 문서의 품질과 목적에 큰 영향을 미칩니다.<br/>
-            문서 작성을 위한 단어를 선택하여 주십시오.
-          </label>
-          <ComboBox
-            id="select-draft-words-form"
-            instanceId="select-draft-words-form"
-            defaultValue={comboBoxOptions[1]}
-            isDisabled={false}
-            isLoading={false}
-            isClearable={true}
-            name="draft-words"
-            options={suggestedkeyword}
-            onChange={changeInputValue}
-            />
+            <label
+              className="block text-gray-500 text-sm font-bold mb-5 leading-[2]"
+              htmlFor="DraftWord"
+            >
+              문서를 작성하기 위한 첫 번째 단계인 <br/>초안을 작성하기 위해,<br/>
+              단어를 선택하는 단계입니다. <br/>
+              초안 작성 시 단어 선택은 문서의 품질과 목적에 큰 영향을 미칩니다.<br/>
+              문서 작성을 위한 단어를 선택하여 주십시오.
+            </label>
+            <ComboBox
+              id="select-draft-words-form"
+              instanceId="select-draft-words-form"
+              defaultValue={comboBoxOptions[1]}
+              isDisabled={false}
+              isLoading={false}
+              isClearable={true}
+              name="draft-words"
+              options={suggestedkeyword}
+              onChange={changeInputValue}
+              />
+          </div>
         </div>
-        </p>
       </div>
     </div>
   )
