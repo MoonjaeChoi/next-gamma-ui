@@ -1,25 +1,34 @@
-# 1
+## History
+-- main : next-gamma1-ui 
+-- module : auth-module
+
+# 1 install list
 react-select
-
-# 2 Next Auth 
-auth.tsx
-
-# 3 install list
 npm i next-auth
 npm i axios
 npm i swr
 npm i react-icons
 
-# 4 Prisma 
+# 2 Prisma 
 ## prisma 설치 
 npm install prisma --save-dev
 npm install @prisma/client
 npx prisma init 
 
 ## .env
-DATABASE_URL=mongodb+srv://piratecmj:Tmxlcl0519@cluster0.6btq2cl.mongodb.net/portfolio4
+DATABASE_URL=mongodb+srv://**********:**********@cluster0.6btq2cl.mongodb.net/portfolio4
 
 ## global.d.ts 생성 
+
+import type { PrismaClient } from '@prisma/client'
+import type { MongoClient } from 'mongodb'
+
+declare global {
+  namespace globalThis {
+    var prismadb: PrismaClient
+  }
+}
+
 
 ## 
 npm i mongodb
@@ -27,16 +36,27 @@ npm i @next-auth/prisma-adapter
 
 ## .env.development
 GOOGLE_CLIENT_ID=
+
 GOOGLE_CLIENT_SECRET=
+
 GITHUB_ID=
+
 GITHUB_SECRET=
+
 NEXTAUTH_JWT_SECRET=
+
 NEXTAUTH_SECRET=
+
 NEXTAUTH_URL=
+
 EMAIL_SERVER_HOST=smtp.sendgrid.net
+
 EMAIL_SERVER_PORT=587
+
 EMAIL_SERVER_USER=apikey
+
 EMAIL_SERVER_PASSWORD=
+
 EMAIL_FROM=
 
 
