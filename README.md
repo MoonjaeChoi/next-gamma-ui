@@ -1,6 +1,6 @@
 ## History
--- main : next-gamma1-ui 
--- module : auth-module
+-- main : next-gamma1-ui (this)
+-- module : https://github.com/MoonjaeChoi/module-next-auth.git
 
 # 1 install list
 react-select
